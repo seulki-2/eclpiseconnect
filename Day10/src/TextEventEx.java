@@ -2,12 +2,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ActionEventEx extends Frame implements ActionListener{
+public class TextEventEx extends Frame implements ActionListener{
 	Panel p;
 	Button input, exit;
 	TextArea ta;
 	
-	public ActionEventEx() {
+	public TextEventEx() {
 		super("ActionEvent Test");
 		
 		p=new Panel();
@@ -27,8 +27,6 @@ public class ActionEventEx extends Frame implements ActionListener{
 		
 		setBounds(300,300,300,200);
 		setVisible(true);
-	
-		
 	}
 		
 	public void actionPerformed(ActionEvent ae) {
@@ -47,8 +45,7 @@ public class ActionEventEx extends Frame implements ActionListener{
 		}
 	}
 	public static void main(String[] args) {
-		new ActionEventEx();
-
+		new TextEventEx();
 	}
 	
 		
